@@ -2,282 +2,289 @@
 
 {{ template "header" }}
 
-  <div class="py-5">
+<div class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-            <li class="nav-item" onclick="showHome()">
-              <a href="#" class="active nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
-            </li>
-            <li class="nav-item" onclick="showKonvert()">
-              <a class="nav-link" href="#">Конвертация</a>
-            </li>
-            <li class="nav-item" onclick="showPop()">
-              <a class="nav-link" href="#">Пополнить</a>
-            </li>
-            <li class="nav-item" onclick="showKurs()">
-              <a href="#" class="nav-link">Валюта</a>
-            </li>
-            <li class="nav-item" onclick="showBasket()">
-              <a href="#" class="nav-link">Корзина</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="bankHome">
-        <div class="col-md-12">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Карта</th>
-                <th>На счету</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>0000 0000 0000 0000</td>
-                <td>1 455 грн.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>1111 1111 1111 1111</td>
-                <td>15 245 грн.</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>2222 2222 2222 2222</td>
-                <td>55 грн.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="konvert" id="bankKonvert">
         <div class="row">
-          <div class="col-md-6">
-            <div class="btn-group">
-              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Счет</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" onclick="showHome()">
+                        <a href="#" class="active nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
+                    </li>
+                    <li class="nav-item" onclick="showKonvert()">
+                        <a class="nav-link" href="#">Конвертация</a>
+                    </li>
+                    <li class="nav-item" onclick="showPop()">
+                        <a class="nav-link" href="#">Пополнить</a>
+                    </li>
+                    <li class="nav-item" onclick="showKurs()">
+                        <a href="#" class="nav-link">Валюта</a>
+                    </li>
+                    <li class="nav-item" onclick="showBasket()">
+                        <a href="#" class="nav-link">Корзина</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="btn-group">
-              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> В валюту</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
+        </div>
+        <div class="row" id="bankHome">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Карта</th>
+                        <th>На счету</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0000 0000 0000 0000</td>
+                        <td>1 455 грн.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1111 1111 1111 1111</td>
+                        <td>15 245 грн.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2222 2222 2222 2222</td>
+                        <td>55 грн.</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="btn-group">
-              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Счет</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 my-4">
-            <fieldset class="form-group text-white">
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="45 грн"> </fieldset>
-          </div>
-          <div class="col-md-6 my-4">
-            <fieldset class="form-group text-white">
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="После конвертации"> </fieldset>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-right">
-            <a class="btn btn-primary" href="">Конвертация</a>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="bankPop">
-        <div class="col-md-12">
-          <div class="konvert">
+        <div class="konvert" id="bankKonvert">
             <div class="row">
-              <div class="col-md-12">
-                <div class="btn-group">
-                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Счет</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
+                <div class="col-md-6">
+                    <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Счет</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-md-6">
+                    <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> В валюту</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Счет</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-              <div class="col-md-6 my-4">
-                <fieldset class="form-group text-white">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="45 грн"> </fieldset>
-                <fieldset class="form-group text-white">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Номер телефона"> </fieldset>
-                <a class="btn btn-primary" href="">Пополнить</a>
-              </div>
-              <div class="col-md-3">
-                <img class="img-fluid d-block" src="./static/images/mob-operatory-ukr.jpg"> </div>
+                <div class="col-md-6 my-4">
+                    <fieldset class="form-group text-white">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="45 грн"></fieldset>
+                </div>
+                <div class="col-md-6 my-4">
+                    <fieldset class="form-group text-white">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="После конвертации">
+                    </fieldset>
+                </div>
             </div>
             <div class="row">
-              <div class="col-md-12 text-right"> </div>
+                <div class="col-md-12 text-right">
+                    <a class="btn btn-primary" href="">Конвертация</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="row" id="bankKurs">
-        <div class="col-md-12">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Валюта</th>
-                <th>Цена продажи</th>
-                <th>Цена покупки</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Доллар США</td>
-                <td>26.25</td>
-                <td>26.75</td>
-              </tr>
-              <tr>
-                <td>Евро</td>
-                <td>31.40</td>
-                <td>31.60</td>
-              </tr>
-              <tr>
-                <td>Рубль</td>
-                <td>0.45</td>
-                <td>0.46</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="row" id="bankPop">
+            <div class="col-md-12">
+                <div class="konvert">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="btn-group">
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Счет</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 my-4">
+                            <fieldset class="form-group text-white">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="45 грн">
+                            </fieldset>
+                            <fieldset class="form-group text-white">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Номер телефона"></fieldset>
+                            <a class="btn btn-primary" href="">Пополнить</a>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-fluid d-block" src="./static/images/mob-operatory-ukr.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-right"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="bankBasket">
-        <div class="row">
-          <div class="col-md-12">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Операция</th>
-                  <th>Сумма перевода</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>--</td>
-                  <td>--</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="row" id="bankKurs">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Валюта</th>
+                        <th>Цена продажи</th>
+                        <th>Цена покупки</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Доллар США</td>
+                        <td>{{.Usd.In}}</td>
+                        <td>{{.Usd.Out}}</td>
+                    </tr>
+                    <tr>
+                        <td>Евро</td>
+                        <td>{{.Euro.In}}</td>
+                        <td>{{.Euro.Out}}</td>
+                    </tr>
+                    <tr>
+                        <td>Рубль</td>
+                        <td>{{.Rub.In}}</td>
+                        <td>{{.Rub.Out}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-right">
-            <a class="btn btn-primary" href="">Выполнить</a>
-          </div>
+        <div id="bankBasket">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Операция</th>
+                            <th>Сумма перевода</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <a class="btn btn-primary" href="">Выполнить</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="p-5 gradient-overlay bg-secondary">
+</div>
+<div class="p-5 gradient-overlay bg-secondary">
     <div class="container">
-      <div class="row">
-        <div class="p-3 align-self-center col-md-4">
-          <div class="card">
-            <div class="card-block p-5">
-              <h1>25% годовых</h1>
-              <h3>в грн</h3>
-              <hr>
-              <p>Perfect for small business and growing teams.&nbsp;</p>
-              <a href="#" class="btn btn-dark">Заказать карту</a>
+        <div class="row">
+            <div class="p-3 align-self-center col-md-4">
+                <div class="card">
+                    <div class="card-block p-5">
+                        <h1>25% годовых</h1>
+                        <h3>в грн</h3>
+                        <hr>
+                        <p>Perfect for small business and growing teams.&nbsp;</p>
+                        <a href="#" class="btn btn-dark">Заказать карту</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="p-3 align-self-center col-md-4">
-          <div class="card">
-            <div class="card-block p-5">
-              <h1>14% годовых</h1>
-              <h3>в долларах США</h3>
-              <hr>
-              <p>Use all the features and get the maximum out of the app</p>
-              <a href="#" class="btn btn-dark">Заказать карту</a>
+            <div class="p-3 align-self-center col-md-4">
+                <div class="card">
+                    <div class="card-block p-5">
+                        <h1>14% годовых</h1>
+                        <h3>в долларах США</h3>
+                        <hr>
+                        <p>Use all the features and get the maximum out of the app</p>
+                        <a href="#" class="btn btn-dark">Заказать карту</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="p-3 align-self-center col-md-4">
-          <div class="card">
-            <div class="card-block p-5">
-              <h1>11% годовых</h1>
-              <h3>в Euro</h3>
-              <hr>
-              <p>Get the whole pack and forget about everything else</p>
-              <a href="#" class="btn btn-dark">Заказать карту</a>
+            <div class="p-3 align-self-center col-md-4">
+                <div class="card">
+                    <div class="card-block p-5">
+                        <h1>11% годовых</h1>
+                        <h3>в Euro</h3>
+                        <hr>
+                        <p>Get the whole pack and forget about everything else</p>
+                        <a href="#" class="btn btn-dark">Заказать карту</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <style>
+<style>
     #bankKonvert,
     #bankBasket,
     #bankKurs,
     #bankPop {
-      display: none;
+        display: none;
     }
-  </style>
-  <script>
-    function showHome(){
-      document.getElementById("bankHome").style.display = "inline";
-      document.getElementById("bankKonvert").style.display = "none";
-      document.getElementById("bankBasket").style.display = "none";
-      document.getElementById("bankKurs").style.display = "none";
-      document.getElementById("bankPop").style.display = "none";
+</style>
+<script>
+    function showHome() {
+        document.getElementById("bankHome").style.display = "inline";
+        document.getElementById("bankKonvert").style.display = "none";
+        document.getElementById("bankBasket").style.display = "none";
+        document.getElementById("bankKurs").style.display = "none";
+        document.getElementById("bankPop").style.display = "none";
     }
-    function showKonvert(){
-      document.getElementById("bankHome").style.display = "none";
-      document.getElementById("bankKonvert").style.display = "inline";
-      document.getElementById("bankBasket").style.display = "none";
-      document.getElementById("bankKurs").style.display = "none";
-      document.getElementById("bankPop").style.display = "none";
+
+    function showKonvert() {
+        document.getElementById("bankHome").style.display = "none";
+        document.getElementById("bankKonvert").style.display = "inline";
+        document.getElementById("bankBasket").style.display = "none";
+        document.getElementById("bankKurs").style.display = "none";
+        document.getElementById("bankPop").style.display = "none";
     }
-    function showPop(){
-      document.getElementById("bankHome").style.display = "none";
-      document.getElementById("bankKonvert").style.display = "none";
-      document.getElementById("bankBasket").style.display = "none";
-      document.getElementById("bankKurs").style.display = "none";
-      document.getElementById("bankPop").style.display = "inline";
+
+    function showPop() {
+        document.getElementById("bankHome").style.display = "none";
+        document.getElementById("bankKonvert").style.display = "none";
+        document.getElementById("bankBasket").style.display = "none";
+        document.getElementById("bankKurs").style.display = "none";
+        document.getElementById("bankPop").style.display = "inline";
     }
-    function showKurs(){
-      document.getElementById("bankHome").style.display = "none";
-      document.getElementById("bankKonvert").style.display = "none";
-      document.getElementById("bankBasket").style.display = "none";
-      document.getElementById("bankKurs").style.display = "inline";
-      document.getElementById("bankPop").style.display = "none";
+
+    function showKurs() {
+        document.getElementById("bankHome").style.display = "none";
+        document.getElementById("bankKonvert").style.display = "none";
+        document.getElementById("bankBasket").style.display = "none";
+        document.getElementById("bankKurs").style.display = "inline";
+        document.getElementById("bankPop").style.display = "none";
     }
-    function showBasket(){
-      document.getElementById("bankHome").style.display = "none";
-      document.getElementById("bankKonvert").style.display = "none";
-      document.getElementById("bankBasket").style.display = "inline";
-      document.getElementById("bankKurs").style.display = "none";
-      document.getElementById("bankPop").style.display = "none";
+
+    function showBasket() {
+        document.getElementById("bankHome").style.display = "none";
+        document.getElementById("bankKonvert").style.display = "none";
+        document.getElementById("bankBasket").style.display = "inline";
+        document.getElementById("bankKurs").style.display = "none";
+        document.getElementById("bankPop").style.display = "none";
     }
-  </script>
+</script>
 
 {{ template "footer" }}
 

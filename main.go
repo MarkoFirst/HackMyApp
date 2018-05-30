@@ -3,7 +3,6 @@ package main
 import (
 	. "./routing"
 	"fmt"
-	_ "io/ioutil"
 	"net/http"
 	"text/template"
 	"log"
@@ -78,7 +77,6 @@ func main() {
 	router.GET("/bank", BankHandler)
 	router.GET("/kript", KriptHandler)
 	router.GET("/error", ErrorHandler)
-
 	router.GET("/search", searchInDb)
 
 	log.Fatal(http.ListenAndServe(":3000", router))
