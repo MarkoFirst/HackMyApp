@@ -1,2 +1,2 @@
-/.idea
+/.ideagit rm --cached -r .idea
 *.exe
