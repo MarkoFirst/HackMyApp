@@ -1,0 +1,59 @@
+{{ define "header" }}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+    <!-- <script type="text/javascript" src="formJS.js"></script> -->
+    <link rel="stylesheet" href="./static/slyleFirst.css">
+    <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css">
+</head>
+
+<body>
+<div style="position: fixed; width: 100%; z-index: 100;">
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">HackMyApp</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item" id="formInButton">
+                        <a class="nav-link text-white" href="/" onclick="showForm()">Вход</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/bank">Банк</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/shop">Магазин</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/blog">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/error">Ошибки настройки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/kript">Криптография</a>
+                    </li>
+                </ul>
+                <form class="form-inline m-0" action="/search">
+                    <input class="form-control mr-2" id="search" type="text" placeholder="Поиск">
+                    <button class="btn btn-primary" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<div style="height: 56px"></div>
+
+{{ end }}

@@ -1,0 +1,88 @@
+{{ define "index" }}
+
+{{ template "header" }}
+
+  <div class="gradient-overlay py-5 w-100" style="background-image: url(&quot;./static/images/dwback.jpg&quot;);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-3 text-white align-self-center">
+          <img class="img-fluid d-block mx-auto mb-5" src=".\static\images\hackLogo.png"> </div>
+        <div class="col-md-9 text-white align-self-center">
+          <h1 class="display-3 mb-4">Взломай мое приложение</h1>
+          <p class="lead mb-5"><b>Это топ уязвимостей и ошибок разработчиков в одном месте.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b>
+            <br> </p>
+          <a href="#" class="btn btn-lg mx-1 btn-secondary">Регистрация</a>
+          <a href="#" class="btn btn-lg mx-1 btn-dark">Материалы для изучения</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="mb-4 text-primary">Вы можете тренироваться в атаках на:</h1>
+          <div class="row text-left mt-5">
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/bank.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Операции с картами</b></h5>
+                </div>
+              </div>
+              <p>Показывает виды махинаций с банковскими картами, счетами и переводами валют.</p>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/crypto.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Криптографию</b></h5>
+                </div>
+              </div>
+              <p>Частотный анализ, оценка стойкости алгоритмов, примеры слабой криптографии и атаки на алгоритмы.</p>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/misc.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Ошибки настройки</b></h5>
+                </div>
+              </div>
+              <p>Ошибки в конфигурации системы, халатное отношение администраторов и демонстрация последствий от этого для всего приложения в целом.</p>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/spoof.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Перехват и спуфинг</b></h5>
+                </div>
+              </div>
+              <p>Техники и атаки прослушки трафика, подмены адресов и различные манипуляции с данными которые позволяют выполнять несанкционированные действия.</p>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/weakauth.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Слабая авторизация</b></h5>
+                </div>
+              </div>
+              <p>Не надлежащая защита уровней доступа, слабые и словарные пароли, малая энтропия на токене сессии - какие это имеет последствия.</p>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="row mb-3">
+                <div class="text-center col-2"><img src="./static/images/scodef.png" height="48px"></div>
+                <div class="align-self-center col-10">
+                  <h5 class="text-secondary"><b>Ошибки в коде и многое другое</b></h5>
+                </div>
+              </div>
+              <p>Как ошибка в коде при валидации, или ложное представление и логические заблуждения разработчика выливаются в критические уязвимости всей системы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{ template "footer" }}
+
+{{ end }}
