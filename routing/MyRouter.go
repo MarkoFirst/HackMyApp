@@ -45,6 +45,7 @@ func BankHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 
 func KriptHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) { universalRouter(w, "kript", nil) }
 func ErrorHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) { universalRouter(w, "error", nil) }
+func SearchInDb(w http.ResponseWriter, r *http.Request, ps httprouter.Params) { universalRouter(w, "search", nil) }
 
 func getJson(url string, target interface{}) error {
 	r, err := http.Get(url)
