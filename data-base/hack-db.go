@@ -2,9 +2,7 @@ package data_base
 
 import "database/sql"
 
-var (
-	db, _ = sql.Open("sqllite3", "cache/web.db")
-)
+var db, _ = sql.Open("sqllite3", "cache/web.db")
 
 func CreateDataBase() {
 	db.Exec("CREATE TABLE if NOT EXISTS users (user_id INTEGER, user_name TEXT, password TEXT)")

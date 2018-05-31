@@ -34,8 +34,8 @@ func BankHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 	data := new(PrivatBankExchangeRates)
 	getJson(apiURL, &data)
 
-	USD := Rates{In: data.ExchangeRate[17].SaleRateNB, Out: data.ExchangeRate[17].PurchaseRateNB}
-	EURO := Rates{In: data.ExchangeRate[15].SaleRateNB, Out: data.ExchangeRate[15].PurchaseRateNB}
+	EURO := Rates{In: data.ExchangeRate[17].SaleRateNB, Out: data.ExchangeRate[17].PurchaseRateNB}
+	USD := Rates{In: data.ExchangeRate[15].SaleRateNB, Out: data.ExchangeRate[15].PurchaseRateNB}
 	RUB := Rates{In: data.ExchangeRate[13].SaleRateNB, Out: data.ExchangeRate[13].PurchaseRateNB}
 
 	ExchangeRates := Currency{Usd: USD, Euro: EURO, Rub: RUB}
